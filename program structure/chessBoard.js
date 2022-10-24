@@ -2,11 +2,8 @@ let chessBoard = [];
 let chessGrid = 8;
 
 for (let i = 1; i <= chessGrid; i++) {
-  if (i % 2 == 1) {
-    chessBoard.push(" ");
-  } else if (i % 2 == 0) {
-    chessBoard.push("#");
-  }
+  if (i % 2 == 1) chessBoard.push(" ");
+  else if (i % 2 == 0) chessBoard.push("#");
 }
 
 let reversedChessBoard = [...chessBoard].reverse();
